@@ -5,7 +5,7 @@ node.save
 
 node_cached = search(:node, "name:#{node.name} AND chef_environment:#{node.chef_environment}")
 sttime=Time.now.to_f
-until node_cached.roles.empty? || node_cached.roles.nil?
+while node_cached.roles.empty? || node_cached.roles.nil?
   if (Time.now.to_f-sttime)>=60
     Chef::Log.error "Timeout exceeded while node have been indexed.."
     exit 1
