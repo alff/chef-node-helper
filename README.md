@@ -1,14 +1,11 @@
-chef-node-helper Cookbook
+Description
 =========================
-TODO: Enter the cookbook description here.
+ Main aim of this cookbook to handle any chef "features" which we can add directly to any existent recipes.
+ This version contain simple recipe only, but soon i'll add some cool libraries which you can call in any step of your current cookbooks.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
-
-e.g.
-#### packages
-- `toaster` - chef-node-helper needs toaster to brown your bagel.
+At this moment doesn't have it. Or no. You need at least one. You need chef. :)
 
 Attributes
 ----------
@@ -33,24 +30,22 @@ e.g.
 
 Usage
 -----
-#### chef-node-helper::default
-TODO: Write usage instructions for each cookbook.
+#### chef-node-helper::common
 
-e.g.
 Just include `chef-node-helper` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[chef-node-helper]"
+    "recipe[chef-node-helper::common]"
   ]
 }
 ```
 
 Contributing
 ------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+Feel free to contribute.
 
 e.g.
 1. Fork the repository on Github
