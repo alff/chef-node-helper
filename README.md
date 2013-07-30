@@ -1,6 +1,6 @@
 Description
 =========================
- Main aim of this cookbook to handle any chef "features" which we can add directly to any existent recipes.
+ Main aim of this cookbook to handle any chef "features" workarounds which we can't add directly to any existent recipes.
  This version contain simple recipe only, but soon i'll add some cool libraries which you can call in any step of your current cookbooks.
 
 Requirements
@@ -31,6 +31,10 @@ e.g.
 Usage
 -----
 #### chef-node-helper::common
+
+Best option to add this recipe to existent role.
+
+-or-
 
 Just include `chef-node-helper` in your node's `run_list`:
 
